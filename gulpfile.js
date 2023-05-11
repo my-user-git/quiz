@@ -93,10 +93,10 @@ const scripts = () => {
   .pipe(babel ({
       presets: ['@babel/env']
   }))
-  .pipe(concat('main.js'))
   .pipe(uglify({
       toplevel: true
   }).on('error', notify.onError()))
+  .pipe(concat('main.js'))
   .pipe(sourcemaps.write())
   .pipe(dest('dist/js'))
   .pipe(browserSync.stream())

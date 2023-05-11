@@ -1,95 +1,7 @@
 
-// import { quizData } from './data.js';
-// import { dataImage } from './data.js';
-// let quizDataDyn = await import('./data.js');
-
-let quizData = [
-    {
-        question: 'Для чего Вы ищете онлайн курс по альтернативной истории?',
-        answers: [
-            { 'Скучно, ищу что-то интересное и необычное': false },
-            { 'Хочу узнать историческую правду': false },
-            { 'Нам врали в школе, надо разобраться': false },
-            { 'Американцы не летали на Луну': false },
-            { 'Хочу потренироваться в определении идиотов': false },
-        ]
-    },
-
-    {
-        question: 'Кем Вы являетесь в контексте текущего образования?',
-        answers: [
-            { 'Школьник разных классов': false },
-            { 'Студент определённого уровня': false },
-            { 'Образование в прошлом': false },
-            { 'Энное высшее': false },
-            { 'Грызу и дальше': false },
-        ]
-    },
-
-    {
-        question: 'Кем Вы себя ощущаете на просторах интернета?',
-        answers: [
-            { 'Школота': false },
-            { 'Стьюдент': false },
-            { 'Диванный эксперт': false },
-            { 'Полевой эксперт': false },
-            { 'Точно всё не знаю': false },
-            { 'Знаю всё, но не точно': false },
-        ]
-    },
-
-    {
-        question: 'Какие вопросы альтернативной истории для Вас наиболее интересны?',
-        answers: [
-            { '\"Полёты\" на Луну снимал Стенли Кубрик в кинопавильоне на Земле?': false },
-            { 'Почему скрывают катаклизм 19 века который засыпал здания по всему миру?': false },
-            { 'Почему рухнул небоскрёб в который не попадал самолёт 11 сентября 2001 года?': false },
-            { 'Монферран не мог сделать Александровскую колонну, она стояла до него?': false },
-            { 'Антарктида, НЛО и немцы: кто напал на американцев в 1946-47 гг?': false },
-            { 'Санкт-Петербург Пётр I не основал, а откопал?': false },
-        ]
-    },
-
-    {
-        question: 'Знаете ли Вы канал \"Песчаный Воин V\" на Дзене?',
-        answers: [
-            { 'Да, читал, но не согласен': false },
-            { 'Да, подписан, поддерживаю': false },
-            { 'Песчаный Воин - идиот': false },
-            { 'Песчаный Воин - кто это?': false },
-        ]
-    },
-
-
-];
-
-
-const dataImage = [
-    {
-        name: '\"Лунная афёра\"',
-        image: './images/moon.png',
-        link: 'https://dzen.ru/suite/08067b75-a7ac-46e7-8a4c-72882f69a1b8?share_to=link'
-    },
-
-    {
-        name: '\"Засыпанные\" здания по всему миру',
-        image: './images/building.png',
-        link: 'https://dzen.ru/suite/08067b75-a7ac-46e7-8a4c-72882f69a1b8?share_to=link'
-    },
-
-    {
-        name: '11 сентября 2001 года',
-        image: './images/911.png',
-        link: 'https://dzen.ru/suite/92002a01-70b2-4671-9582-9e2d4877b41e?share_to=link'
-    },
-
-    {
-        name: '\"Украденная\" история человечества',
-        image: './images/history.png',
-        link: 'https://dzen.ru/suite/bad5d39b-bf6f-4f91-9c8a-813724dc73b9?share_to=link'
-    },
-
-]
+import { quizData } from './data.js';
+import { dataImage } from './data.js';
+let quizDataDyn = await import('./data.js');
 
 const $questionItem = document.querySelector('#quiz'),
     $forward = document.createElement('button'),
@@ -147,8 +59,7 @@ function createAnswerList(quizData) {
     $titleQuestion.classList.add('quiz-box__question');
     $titleQuestion.textContent = quizData.question;
 
-    if (currentQuiz === (quizData.length - 1)) {
-    // if (currentQuiz === (quizDataDyn.quizData.length - 1)) {
+    if (currentQuiz === (quizDataDyn.quizData.length - 1)) {
         const $lastImageLink = document.createElement('a'),
             $lastImage = document.createElement('img');
 
@@ -157,7 +68,7 @@ function createAnswerList(quizData) {
         $lastImageLink.setAttribute('title', 'Перейти на канал Дзена');
 
         $lastImageLink.classList.add('quiz-box__question-author');
-        $lastImage.setAttribute('src', '../images/author.png');
+        $lastImage.setAttribute('src', './images/author.png');
         $lastImageLink.append($lastImage);
         $titleQuestion.append($lastImageLink);
     }
