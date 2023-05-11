@@ -1,0 +1,30 @@
+.quiz-box {
+    &__label:hover {
+        background-color: #fff;
+        border: 1px solid $dark38;
+    }
+
+    &__input:checked~.quiz-box__label {
+        background-color: #fff;
+        border: 1px solid $dark38;
+    }
+
+    &__input:checked~.quiz-box__label::before {
+        width: 10px;
+        height: 10px;
+        border: 6px solid $dark38;
+    }
+
+
+    .prev:hover {
+        color: #ffffff;
+        background-color: #383838;
+    }
+
+    &__quiz {
+        .button-result:hover {
+            color: #ffffff;
+            background-color: #383838;
+        }
+    }
+}

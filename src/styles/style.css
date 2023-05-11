@@ -1,0 +1,628 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "OnestRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OnestRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "OnestMedium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/OnestMedium.woff") format("woff");
+}
+.quiz-box {
+  display: grid;
+  grid-template-areas: "left-top right" "left-center right";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+}
+.quiz-box__title {
+  grid-area: left-top;
+  display: flex;
+  align-items: flex-end;
+}
+.quiz-box__desc {
+  grid-area: left-center;
+}
+.quiz-box__quiz {
+  grid-area: right;
+  display: grid;
+  grid-template-areas: "top-left top-right" "center center" "bottom-left bottom-right";
+  gap: 15px;
+  grid-template-columns: 1fr 130px;
+  grid-template-rows: 50px 1fr 50px;
+}
+.quiz-box__quiz .button-result {
+  grid-area: top-right;
+}
+.quiz-box__question {
+  grid-area: top-left;
+}
+.quiz-box__list {
+  grid-area: center;
+}
+.quiz-box .next {
+  grid-area: bottom-right;
+}
+.quiz-box .prev {
+  grid-area: bottom-left;
+}
+.quiz-box__figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin: 0;
+}
+
+.quiz-box__label:hover {
+  background-color: #fff;
+  border: 1px solid #383838;
+}
+.quiz-box__input:checked ~ .quiz-box__label {
+  background-color: #fff;
+  border: 1px solid #383838;
+}
+.quiz-box__input:checked ~ .quiz-box__label::before {
+  width: 10px;
+  height: 10px;
+  border: 6px solid #383838;
+}
+.quiz-box .prev:hover {
+  color: #ffffff;
+  background-color: #383838;
+}
+.quiz-box__quiz .button-result:hover {
+  color: #ffffff;
+  background-color: #383838;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../images/bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+h2 {
+  padding: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+.quiz-box {
+  padding: 25px;
+  background-color: #ffcb36;
+  border-radius: 24px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  overflow: hidden;
+}
+.quiz-box__title {
+  margin: 0;
+  font-family: "OnestMedium", sans-serif;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #383838;
+}
+.quiz-box__desc {
+  margin: 0;
+  font-family: "OnestRegular", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #383838;
+  opacity: 0.7;
+}
+.quiz-box__quiz {
+  padding: 32px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+.quiz-box__link {
+  text-decoration: none;
+}
+.quiz-box__image {
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+.quiz-box__figcapture {
+  font-family: "OnestRegular", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #383838;
+}
+.quiz-box__question {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  text-align: left;
+  font-family: "OnestMedium", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #383838;
+}
+.quiz-box__question-author {
+  width: 65px;
+  height: 65px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.quiz-box__question-author img {
+  width: 100%;
+  height: auto;
+}
+.quiz-box__steps {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  text-align: right;
+  font-family: "OnestRegular", sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #9b9b9b;
+}
+.quiz-box__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 0;
+  list-style: none;
+}
+.quiz-box__item {
+  position: relative;
+}
+.quiz-box__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+}
+.quiz-box__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 16px 54px 16px 14px;
+  font-family: "OnestRegular", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #383838;
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.quiz-box__label::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  right: 18px;
+  background-color: #f5f5f5;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+.quiz-box__button {
+  padding: 0 40px;
+  font-family: "OnestRegular", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #383838;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.quiz-box .prev {
+  margin-right: auto;
+}
+.quiz-box .next {
+  margin-right: 0;
+  margin-left: auto;
+  color: #ffffff;
+  background-color: #383838;
+}
+.quiz-box .next:disabled {
+  border-color: rgba(0, 0, 0, 0);
+  background-color: #d8d8d8;
+  color: #9b9b9b;
+  cursor: not-allowed;
+}
+
+@media (max-width: 960px) {
+  .quiz-box {
+    display: grid;
+    grid-template-areas: "top" "top-desc" "bottom";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    row-gap: 20px;
+  }
+  .quiz-box__title {
+    grid-area: top;
+    justify-content: center;
+    text-align: center;
+  }
+  .quiz-box__desc {
+    grid-area: top-desc;
+    text-align: center;
+  }
+  .quiz-box__quiz {
+    grid-area: bottom;
+  }
+}
+@media (max-width: 720px) {
+  .quiz-box__quiz {
+    grid-template-rows: 70px 1fr 50px;
+  }
+  .quiz-box__label {
+    padding: 15px 40px 15px 15px;
+    font-size: 14px;
+  }
+  .quiz-box__label::before {
+    right: 10px;
+  }
+}
+@media (max-width: 540px) {
+  .quiz-box__quiz {
+    grid-template-areas: "top-top top-top" "top-bottom top-bottom" "center center" "bottom-left bottom-right";
+    grid-template-rows: 50px 50px 1fr 50px;
+  }
+  .quiz-box__question {
+    grid-area: top-top;
+  }
+  .quiz-box__steps {
+    grid-area: top-bottom;
+  }
+  .quiz-box__list {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */

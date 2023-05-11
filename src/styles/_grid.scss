@@ -1,0 +1,61 @@
+.quiz-box {
+    display: grid;
+    grid-template-areas:
+        "left-top right"
+        "left-center right";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    &__title {
+        grid-area: left-top;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__desc {
+        grid-area: left-center;
+    }
+
+    &__quiz {
+        grid-area: right;
+        display: grid;
+        grid-template-areas:
+            "top-left top-right"
+            "center center"
+            "bottom-left bottom-right";
+        gap: 15px;
+        grid-template-columns: 1fr 130px;
+        grid-template-rows: 50px 1fr 50px;
+
+        .button-result {
+            grid-area: top-right;
+        }
+    }
+
+    &__question {
+        grid-area: top-left;
+    }
+
+    &__list {
+        grid-area: center;
+    }
+
+    .next {
+        grid-area: bottom-right;
+    }
+
+    .prev {
+        grid-area: bottom-left;
+    }
+
+    &__figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        column-gap: 10px;
+        margin: 0;
+    }
+}
